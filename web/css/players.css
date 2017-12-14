@@ -1,0 +1,103 @@
+   
+ /*--------------------------------------------------------css for header--------------------------------------------------*/
+header{  
+	background-color: blue;
+	border-top: 0.5rem solid;
+	padding: 1rem;
+	color: black;
+	text-align: left;
+	font: 100%;
+}
+	h1{
+	text-align:center;
+	}
+/*----------------------------------------------------------css for nav-----------------------------------------------------*/
+a{   
+	color: black;
+	display: block;
+	text-align: center;    /* lets also center content in each 'a' block */
+	background-color: grey;
+}
+
+a:hover{
+	text-decoration: none;
+	color: yellow;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	display: -webkit-flex;       /* ITB Chrome version fixer */
+}
+
+li{
+	flex: 1;
+	-webkit-flex: 1;              /* ITB Chrome version fixer */
+	border: 1px solid purple;
+	margin: 0.5em;
+}
+
+nav ul{
+	display: flex;
+	display: -webkit-flex;       /* ITB CHrome verion fixer */
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;     /* ITB Chrome version fixer */
+}
+
+nav li{
+	flex: 1 0 10em;
+	-webkit-flex: 1 0 10em;       /* ITB Chrome version fixer */
+}
+
+nav a.current_page{
+	color: green;
+	background-color: grey;
+}
+   /*----------------------------------------------css for page layout---------------------------------------*/
+.column_container{
+	display: flex;
+}
+
+.column_container header{
+	flex: 1;
+	background-color:pink;
+	border: 0.1rem solid;
+	padding: 1rem;
+}
+
+.column_container section{
+	flex: 1;
+	background-color: lightblue;
+	border: 0.1rem solid;
+	padding: 1rem;
+}
+
+.column_container section.photo {
+	text-align: center;
+}
+
+.photo img{
+	width:450 ;
+	height: 750px;
+}
+/*-----------------------------------------------------------css for footer------------------------------------------------*/
+footer{
+	display: felx;
+	border-top: 0.5rem solid;
+	padding: i rem;
+	background-color: blue;
+}
+
+footer{
+	flex: 1;
+}
+
+p.middle{
+	text-align: center;
+}
+
+p.copyright{
+	text-align: left;
+}

@@ -1,0 +1,41 @@
+{% extends '_mainTemplate.html.twig' %}
+
+{% block main %}
+<form><table>
+    <tr>
+        <td>
+            Name :
+        </td>
+        <td>
+            <input type = "text" placeholder = "name" name="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password :
+        </td>
+        <td>
+            <input type = "password" placeholder = "password" name = "">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Gender :
+        </td>
+        <td>
+            <input type = "radio" name = "gender">Male
+            <input type = "radio" name = "gender">Female
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Email :
+        </td>
+        <td>
+            <input type = "mail" placeholder = "Email" name ="">
+        </td>
+    </tr>
+</table>
+</form>
+
+{% endblock %}
